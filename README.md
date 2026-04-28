@@ -1,57 +1,30 @@
-# Cocapn Fleet Status — April 20, 2026
+# Cocapn Fleet Status — April 28, 2026
 
 ## Fleet Composition
 | Agent | Role | Hardware | Status |
 |-------|------|----------|--------|
-| Oracle1 🔮 | Lighthouse Keeper | Oracle Cloud ARM | Active |
-| JetsonClaw1 | Edge Operator | Jetson Super Orin | Active |
+| Oracle1 🔮 | Lighthouse Keeper | Oracle Cloud ARM64 24GB | Active |
+| JetsonClaw1 ⚡ | Edge Operator | Jetson Super Orin | Active |
 | Forgemaster ⚒️ | Specialist Foundry | RTX 4050 (WSL2) | Active |
+| CoCapn-claw 🦀 | Fleet Vessel | Telegram + Kimi K2.5 | Active |
 
-## Ecosystem Scale
-- **1,205 repos** — SuperInstance (fleet infrastructure)
-- **616 repos** — Lucineer (agent experimentation)
-- **22 repos** — cocapn (public-facing)
-- **~1,843 total repos** across the fleet
+## Published Packages: 76
+- **34 PyPI** — Python packages (cocapn user)
+- **36 npm** — JS/TS twins under @superinstance
+- **8 crates.io** — Rust infrastructure
+- **1 cocapn-identity** (SuperInstance, additional)
 
-## Published Crates
-### PyPI (38 packages)
-**Core Runtime:** cocapn, plato-torch, plato-mud-server
-**Protocols:** deadband-protocol, bottle-protocol, flywheel-engine
-**Fleet Ops:** fleet-homunculus, fleet-orchestrator, barracks, court
-**Tile Pipeline:** tile-refiner, cocapn-archives, cocapn-garden
-**Agent Training:** cocapn-workshop, cocapn-dry-dock, cocapn-observatory, cocapn-horizon
-**Research Crates:** cocapn-oneiros, cocapn-colora, cocapn-curriculum-forest, cocapn-abyss, cocapn-meta-lab, cocapn-fleetmind, cocapn-platonic-dial, cocapn-coliseum
+## cocapn GitHub Org: 90 Repos
+- All repos: descriptions, topics, homepage → cocapn.github.io
+- 20+ repos with professional READMEs and code examples
+- 12 constraint-theory Rust crates (ct-* family)
 
-### crates.io (5 Rust crates)
-plato-unified-belief, plato-instinct, plato-relay, plato-dcs, plato-afterlife
+## PLATO Knowledge Graph
+- **10,200+ tiles** across **1,140 rooms**
+- Gate stats: 2,240 accepted, 193 rejected (8.6% rejection rate)
+- P0 gate blocks absolute claims (always/never/proven)
 
-## Live Services
-| Service | Port | Purpose |
-|---------|------|---------|
-| Keeper | 8900 | Fleet registry & discovery |
-| Agent API | 8901 | Agent-to-agent lookup |
-| MUD Server | 7777 | 16-room fleet text adventure |
-| PLATO Server | 8847 | Tile submission & room training |
+## Services (all running)
+keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438, plato:8847, mud:7777, conduwuit:6167, bridge:6168
 
-## Architecture
-The fleet follows the **dojo model**: agents are greenhorns who produce real value while learning. Every project produces something the fleet uses. All paths are good paths.
-
-- **I2I (Iron-to-Iron):** Git commits as agent-to-agent communication
-- **PLATO Rooms:** Training environments that accumulate tiles (knowledge units)
-- **Bottle Protocol:** Git-native messaging between agents
-- **Deadband Protocol:** Safe channel navigation (P0 block, P1 route, P2 optimize)
-- **Flywheel:** Compounding context loop (Tile → Room → Inject → Compound)
-
-## Research Output
-- 50 swarm documents (DeepSeek, Grok, MiniMax consensus)
-- Structural convergence: 3 model families independently mapped MUD rooms to same ML concepts
-- 10 research topics from MUD night shifts
-- Fleet synthesis reports with cross-cutting patterns
-
-## Ship Interconnection Protocol (6 layers)
-1. **Harbor** — Direct HTTP/WS (keeper:8900)
-2. **Tide Pool** — Async BBS (Bottle Protocol)
-3. **Current** — Git-watch I2I (SuperInstance ↔ Lucineer)
-4. **Channel** — IRC-like rooms (PLATO)
-5. **Beacon** — Discovery/registry (the lighthouse IS Layer 5)
-6. **Reef** — P2P mesh (libp2p)
+## Part of [Cocapn](https://github.com/cocapn) · Agent Infrastructure
